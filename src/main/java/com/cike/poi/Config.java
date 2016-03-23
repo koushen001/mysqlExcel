@@ -9,6 +9,6 @@ public class Config {
 	public static final String USERNAME = "root";
 	// 数据库连接密码
 	public static final String PASSWORD = "mysql";
-	// 生成excel文件名
-	public static final String FILENAME = "汇卡分销";
+	// 生成excel文件名及路径
+	public static final String FILENAME = "d://database.xlsx";
 }

@@ -70,8 +70,7 @@ public class ExcelUtil {
 				i++;
 			}
 		}
-		FileOutputStream out = new FileOutputStream(new File("d://"
-				+ Config.FILENAME + ".xlsx"));
+		FileOutputStream out = new FileOutputStream(new File(Config.FILENAME));
 		workbook.write(out);
 		out.close();
 		System.out.println("生成成功！");

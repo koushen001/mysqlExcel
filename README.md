@@ -1,2 +1,4 @@
-# mysqlExcel
 mysql数据库表结构生成excel工具，使用poi实现
+Config.java为数据库配置
+Main为运行入口
+只需修改Config.java数据库配置，再运行Main.java即可
