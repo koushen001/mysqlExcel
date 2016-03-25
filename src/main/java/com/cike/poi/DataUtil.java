@@ -24,7 +24,7 @@ public class DataUtil {
 				+ Config.DATABASE, Config.USERNAME, Config.PASSWORD);
 		// 查询所有的表
 		String sql = "SELECT TABLE_NAME,TABLE_COMMENT FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='"
-				+ Config.DATABASE + "'";
+				+ Config.DATABASE + "' ORDER BY TABLE_NAME";
 		PreparedStatement statement = connect.prepareStatement(sql);
 		ResultSet resultSet = statement.executeQuery();
 		Map<String[], List<DataTable>> map = new HashMap<String[], List<DataTable>>();
